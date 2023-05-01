@@ -1,3 +1,5 @@
+# This fork is for the [patch 2 ext sdk with flasks](https://github.com/TheUltimateNuke/MarrowSDKExt). This was made just so I could merge the two repos.
+
 # Marrow SDK - with Flasks
 SDK Tools used to make Mods for the Marrow Interaction Engine, packaged content in Crates stacked on Pallets.
 
