@@ -44,13 +44,6 @@ namespace SLZ.MarrowEditor
                     _gamePathDictionary = new Dictionary<string, string>();
 
 
-
-
-
-
-
-
-
                     string gamePathParent = System.IO.Directory.GetParent(System.IO.Directory.GetParent(UnityEngine.Application.persistentDataPath).ToString()).ToString();
                     foreach (var gameName in MarrowSDK.GAME_NAMES)
                     {

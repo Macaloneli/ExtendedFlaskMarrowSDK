@@ -106,13 +106,9 @@ namespace SLZ.MarrowEditor
             TextureStreamTool.ApplyTextureStreamingToAllTextures();
 
 
-
-
-
             AddressablesRuntimeProperties.ClearCachedPropertyValues();
 
             string buildPath = Path.GetFullPath(ModBuilder.BuildPath);
-
 
             if (!Directory.Exists(buildPath))
             {

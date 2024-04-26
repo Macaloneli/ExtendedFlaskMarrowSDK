@@ -198,6 +198,7 @@ public class FlaskLabelEditor : Editor
                     if (info.ingredients == null)
                     {
                         info.ingredients = ElixirMixer.GetDefaultReferences(false);
+                        EditorUtility.SetDirty(info);
                     }
                 }
             }
@@ -213,14 +214,17 @@ public class FlaskLabelEditor : Editor
                 if (GUILayout.Button("Set Base Ingredients to Default"))
                 {
                     info.ingredients = ElixirMixer.GetDefaultReferences(false);
+                    EditorUtility.SetDirty(info);
                 }
                 if (GUILayout.Button("Clear Base Ingredients"))
                 {
                     info.ingredients = new string[0];
+                    EditorUtility.SetDirty(info);
                 }
                 if (GUILayout.Button("Select Base Ingredient"))
                 {
                     SelectIngredient(ref info.ingredients);
+                    EditorUtility.SetDirty(info);
                 }
                 EditorGUILayout.EndHorizontal();
 
@@ -233,6 +237,7 @@ public class FlaskLabelEditor : Editor
                 if (GUILayout.Button("Select Additional Ingredient"))
                 {
                     SelectIngredient(ref info.additionalIngredients);
+                    EditorUtility.SetDirty(info);
                 }
             }
         }

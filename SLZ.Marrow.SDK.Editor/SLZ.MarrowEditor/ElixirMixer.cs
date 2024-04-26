@@ -130,6 +130,10 @@ namespace Maranara.Marrow
 
             asmBuilder.buildTarget = BuildTarget.StandaloneWindows64;
             asmBuilder.buildTargetGroup = BuildTargetGroup.Standalone;
+            asmBuilder.compilerOptions = new ScriptCompilerOptions()
+            {
+                AllowUnsafeCode = true
+            };
 
             asmBuilder.buildFinished += ((arg1, arg2) =>
             {

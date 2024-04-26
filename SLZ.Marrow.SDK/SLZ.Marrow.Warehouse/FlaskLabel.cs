@@ -12,7 +12,7 @@ namespace SLZ.Marrow.Warehouse
 #if UNITY_EDITOR
         public MonoScript[] Elixirs {
             get {
-                if (_elixirCache == null || _elixirCache.Length == 0 && elixirGUIDs.Length != 0)
+                if (_elixirCache == null || _elixirCache.Length == 0 && (elixirGUIDs != null && elixirGUIDs.Length != 0))
                 {
                     if (elixirGUIDs != null)
                     {
